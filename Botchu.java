@@ -13,6 +13,13 @@ public class Botchu extends PircBot {
 			String time = new java.util.Date().toString();
 			sendMessage(channel, sender + ": The time is now " + time);
 		}
+	public void onMessage(String channel, String sender, String login, String hostname, String message) {
+
+		if (message.equalsIgnoreCase("go away paulbot")) {
+			
+			sendMessage("Goodbye, " + channel);
+			disconnect();
+		}
 /*	public void onMessage(String channel, String sender, String login, String hostname, String message) {
 		
 		
