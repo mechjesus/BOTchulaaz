@@ -3,7 +3,7 @@ import org.jibble.pircbot.*;
 public class Botchu extends PircBot {
 	
 	public Botchu() {
-		this.setName("PaulBOT");
+		this.setName("Paul_Bot");
 	}
 
 	// this is where we put in replies etc...
@@ -48,5 +48,5 @@ public class RollDice {
 	}
 	}
 
-}
+
 
