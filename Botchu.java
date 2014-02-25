@@ -12,6 +12,11 @@ public class Botchu extends PircBot {
 		if (message.equalsIgnoreCase("time")) {
 			String time = new java.util.Date().toString();
 			sendMessage(channel, sender + ": The time is now " + time);
+		if (message.equalsIgnoreCase("go away paulbot")) {
+			sendMessage("Goodbye " + sender + ", it has been fun.");
+			disconnect();
+
+			
 		}
 
 /*	public void onMessage(String channel, String sender, String login, String hostname, String message) {
@@ -50,4 +55,4 @@ public class RollDice {
 	}
 
 
-
+	}
