@@ -9,21 +9,29 @@ public class Botchu extends PircBot {
 	// this is where we put in replies etc...
 	public void onMessage(String channel, String sender, String login, String hostname, String message) {
 
-		if (message.equalsIgnoreCase("time")) {
+		if (message.equalsIgnoreCase("@time")) {
 			String time = new java.util.Date().toString();
 			sendMessage(channel, sender + ": The time is now " + time);
 			}
-	   if (message.equalsIgnoreCase("go away paul_bot")) {
+	   	if (message.equalsIgnoreCase("@go away")) {
 			sendMessage(channel, "Goodbye " + sender + ", it has been fun.");
 			disconnect();
 			}
-		if (message.equalsIgnoreCase("test")) {
+		if (message.equalsIgnoreCase("@test")) {
 			sendMessage(channel, sender + " your test worked. Good Jorb.");
 			}
-/*		if (message.equalsIgnoreCase("Ascend")) {
+		if (message.equalsIgnoreCase("@help")) {
+			sendMessage(sender, "Commands: time, fight, test, go away");
+			}
+		if (message.equalsIgnoreCase("@fight")) {
+			sendMessage(channel, "/me establishes dominance over all other bots.");
+			}
+		if (message.equalsIgnoreCase("Ascend")) {
 			changeNick(String alpha_paul_bot);
 			}
-/*
+if (recipientNick.equalsIgnoreCase(getNick())) {
+    joinChannel(channel);
+}
 
 /* 
 
