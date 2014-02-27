@@ -29,9 +29,11 @@ public class Botchu extends PircBot {
 	//	if (message.equalsIgnoreCase("Ascend")) {
 	//		changeNick(String alpha_paul_bot);
 	//		}
-if (recipientNick.equalsIgnoreCase(getNick())) {
-    joinChannel(channel);
-}
+//if (recipientNick.equalsIgnoreCase(getNick())) {
+//    joinChannel(channel);
+//}
+
+//TODO: Why do those two not work?
 
 /* 
 
