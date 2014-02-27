@@ -24,7 +24,7 @@ public class Botchu extends PircBot {
 			sendMessage(sender, "Commands: time, fight, test, go away");
 			}
 		if (message.equalsIgnoreCase("@fight")) {
-			sendMessage(channel, "/me establishes dominance over all other bots.");
+			sendAction(channel, "establishes dominance over all other bots.");
 			}
 	//	if (message.equalsIgnoreCase("Ascend")) {
 	//		changeNick(String alpha_paul_bot);
