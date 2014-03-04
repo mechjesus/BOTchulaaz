@@ -73,20 +73,20 @@ public class RollDice {
 
 		if (message.equalsIgnoreCase("@time")) {
 			String time = new java.util.Date().toString();
-			sendMessage(channel, sender + ": The time is now " + time);
+			sendMessage(sender, sender + ": The time is now " + time);
 			}
 	   	if (message.equalsIgnoreCase("@go away")) {
-			sendMessage(channel, "Goodbye " + sender + ", it has been fun.");
+			sendMessage(sender, "Goodbye " + sender + ", it has been fun.");
 			disconnect();
 			}
 		if (message.equalsIgnoreCase("@test")) {
-			sendMessage(channel, sender + " your test worked. Good Jorb.");
+			sendMessage(sender, sender + " your test worked. Good Jorb.");
 			}
 		if (message.equalsIgnoreCase("@help")) {
 			sendMessage(sender, "Commands: time, fight, test, go away");
 			}
 		if (message.equalsIgnoreCase("@fight")) {
-			sendAction(channel, "establishes dominance over all other bots.");
+			sendAction(sender, "establishes dominance over all other bots.");
 			}
 
 
