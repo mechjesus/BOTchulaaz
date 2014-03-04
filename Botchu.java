@@ -26,6 +26,7 @@ public class Botchu extends PircBot {
 		if (message.equalsIgnoreCase("@fight")) {
 			sendAction(channel, "establishes dominance over all other bots.");
 			}
+		}
 	//	if (message.equalsIgnoreCase("Ascend")) {
 	//		changeNick(String alpha_paul_bot);
 	//		}
@@ -68,24 +69,24 @@ public class RollDice {
 */     
 
 
-	}
+	
 	public void onPrivateMessage(String channel, String sender, String login, String hostname, String message) {
 
-		if (message.equalsIgnoreCase("@time")) {
+		if (message.equalsIgnoreCase("time")) {
 			String time = new java.util.Date().toString();
 			sendMessage(sender, sender + ": The time is now " + time);
 			}
-	   	if (message.equalsIgnoreCase("@go away")) {
+	   	if (message.equalsIgnoreCase("go away")) {
 			sendMessage(sender, "Goodbye " + sender + ", it has been fun.");
 			disconnect();
 			}
-		if (message.equalsIgnoreCase("@test")) {
+		if (message.equalsIgnoreCase("test")) {
 			sendMessage(sender, sender + " your test worked. Good Jorb.");
 			}
-		if (message.equalsIgnoreCase("@help")) {
+		if (message.equalsIgnoreCase("help")) {
 			sendMessage(sender, "Commands: time, fight, test, go away");
 			}
-		if (message.equalsIgnoreCase("@fight")) {
+		if (message.equalsIgnoreCase("fight")) {
 			sendAction(sender, "establishes dominance over all other bots.");
 			}
 
