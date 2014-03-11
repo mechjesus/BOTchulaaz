@@ -26,6 +26,31 @@ public class Botchu extends PircBot {
 		if (message.equalsIgnoreCase("@fight")) {
 			sendAction(channel, "establishes dominance over all other bots.");
 			}
+		if (message.equalsIgnorecase("@test2")) {
+			final Random r = new Random();
+			int i = r.nextInt(6) + 1;
+			int y = r.nextInt(6) + 1;
+			final int total = i + y;
+
+			send(getChannel(), sender + " rolled two dice: " + i + " and " + y + " for a total of " + total);
+
+			i = r.nextInt(6) + 1;
+			y = r.nextInt(6) + 1;
+			action("rolled two dice: " + i + " and " + y + " for a total of " + (i + y));
+
+			if (total < (i + y))
+			{
+				action("wins.");
+			}
+			else if (total > (i + y))
+			{
+				action("lost.");
+			}
+			else
+			{
+				action("tied.");
+			}
+		}
 		}
 	//	if (message.equalsIgnoreCase("Ascend")) {
 	//		changeNick(String alpha_paul_bot);
