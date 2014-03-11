@@ -40,19 +40,27 @@ public class Botchu extends PircBot {
 			action("rolled two dice: " + i + " and " + y + " for a total of " + (i + y));
 
 			if (total < (i + y))
-			{
+				{
 				action("wins.");
-			}
+				}
 			else if (total > (i + y))
-			{
+				{
 				action("lost.");
-			}
+				}
 			else
-			{
+				{
 				action("tied.");
+				}
 			}
-		}
-		}
+		if (message.equalsIgnorecase("@test3")){
+			send(sender, "To roll the dice:");
+			send(sender, DOUBLE_INDENT + bold(getNick() + ": " + @test2));
+			
+			
+			
+			
+		}	
+	}
 	//	if (message.equalsIgnoreCase("Ascend")) {
 	//		changeNick(String alpha_paul_bot);
 	//		}
