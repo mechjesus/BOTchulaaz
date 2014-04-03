@@ -55,8 +55,10 @@ public class Botchu extends PircBot {
 			}
 		if (message.equalsIgnoreCase("@test3")){
 			send(sender, "To roll the dice:");
-			send(sender, DOUBLE_INDENT + bold(getNick() + ": " + @test2));
-			
+			send(sender, DOUBLE_INDENT + bold(getNick() + " Partial Success "));
+		//	send(sender, DOUBLE_INDENT + bold(getNick() + ": " + @test2));
+		//      this will replace the line above, however test 2 is still being
+		//      worked on. 
 			
 			
 			
