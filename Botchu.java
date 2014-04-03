@@ -22,15 +22,16 @@ public class Botchu extends PircBot {
 			sendMessage(channel, sender + " your test worked. Good Jorb.");
 			}
 		if (message.equalsIgnoreCase("@help")) {
-			sendMessage(sender, "Commands: time, fight, test, go away");
+			sendMessage(sender, "Commands: time, fight, test, test2, test3,  go away");
 			}
 		if (message.equalsIgnoreCase("@fight")) {
 			sendAction(channel, "establishes dominance over all other bots.");
 			}
-		if (message.equalsIgnorecase("@test2")) {
+		if (message.equalsIgnoreCase("@test2")) {
 			final Random r = new Random();
 			int i = r.nextInt(6) + 1;
 			int y = r.nextInt(6) + 1;
+			sendMessage(channel, sender + i);
 			final int total = i + y;
 
 			send(getChannel(), sender + " rolled two dice: " + i + " and " + y + " for a total of " + total);
@@ -52,7 +53,7 @@ public class Botchu extends PircBot {
 				action("tied.");
 				}
 			}
-		if (message.equalsIgnorecase("@test3")){
+		if (message.equalsIgnoreCase("@test3")){
 			send(sender, "To roll the dice:");
 			send(sender, DOUBLE_INDENT + bold(getNick() + ": " + @test2));
 			
