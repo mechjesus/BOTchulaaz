@@ -1,5 +1,5 @@
 /*		if (message.equalsIgnoreCase("+"x)) {
-			increase by x;
+			Integer.parseInt(x);
 			}
 		if (message.equalsIgnoreCase("-"x)) {
 			decrease by x;
