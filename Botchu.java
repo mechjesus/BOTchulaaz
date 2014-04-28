@@ -18,8 +18,8 @@ public class Botchu extends PircBot {
 	   		boolean check;
 	   		check = false;
 			sendMessage(channel, "Goodbye " + sender + ", it has been fun.");
-			check = true;
 			Thread.sleep(2000);
+			check = true;
 			if (check = true) {
 				disconnect();
 			}
