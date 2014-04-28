@@ -19,6 +19,7 @@ public class Botchu extends PircBot {
 	   		check = false;
 			sendMessage(channel, "Goodbye " + sender + ", it has been fun.");
 			check = true;
+			Thread.sleep(2000);
 			if (check = true) {
 				disconnect();
 			}
