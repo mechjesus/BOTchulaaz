@@ -1,5 +1,6 @@
 import org.jibble.pircbot.*;
 import java.util.Random;
+import java.io.*;
 
 public class Botchu extends PircBot {
 	
