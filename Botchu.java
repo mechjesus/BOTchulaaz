@@ -35,4 +35,4 @@ public class Botchu extends PircBot {
 			}
 		}	
 	}
-}
+
