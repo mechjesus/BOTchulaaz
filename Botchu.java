@@ -24,7 +24,10 @@ public class Botchu extends PircBot {
 			sendAction(channel, "establishes dominance over all other bots.");
 			}
 		if (message.startsWith("+", 0)) {
-			sendMessage(sender, "it did");
+			String increase = message.replaceAll("\\D+","");
+			int message = Integer.parseInt(String increase);
+			int channel = (int channel + int message);
+			sendMessage(sender, "Now" + int channel);
 			}
 			
 			//  regex code to change string to only numbers
