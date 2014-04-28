@@ -15,10 +15,14 @@ public class Botchu extends PircBot {
 			sendMessage(channel, sender + ": The time is now " + time);
 			}
 	   	if (message.equalsIgnoreCase("@go away")) {
+	   		boolean check;
+	   		check = false;
 			sendMessage(channel, "Goodbye " + sender + ", it has been fun.");
-			//insert a boolean expression here that activates to true post message
-			//then change the disconnect to execute if boolean is true.
-			disconnect();
+			check = true;
+			if (check = true) {
+				disconnect();
+			}
+			
 			}
 		if (message.equalsIgnoreCase("@test")) {
 			sendMessage(channel, sender + " your test worked. Good Jorb.");
