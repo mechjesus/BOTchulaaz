@@ -26,9 +26,9 @@ public class Botchu extends PircBot {
 			}
 		if (message.startsWith("+", 0)) {
 			String increase = message.replaceAll("\\D+","");
-			int message = Integer.parseInt(String increase);
-			int channel = (int channel + int message);
-			sendMessage(sender, "Now" + int channel);
+			Integer message = Integer.parseInt(String increase);
+			Integer channel = (Integer channel + Integer message);
+			sendMessage(sender, "Now" + Integer channel);
 			}
 			
 			//  regex code to change string to only numbers
