@@ -26,8 +26,8 @@ public class Botchu extends PircBot {
 			}
 		if (message.startsWith("+", 0)) {
 			String increase = message.replaceAll("\\D+","");
-			Integer message = Integer.parseInt(String increase);
-			Integer channel = (Integer channel + Integer message);
+			Integer change = Integer.parseInt(String increase);
+			Integer channel = (Integer channel + Integer change);
 			sendMessage(sender, "Now" + Integer channel);
 			}
 			
