@@ -29,7 +29,7 @@ public class Botchu extends PircBot {
 			int change = new Integer(increase);
 			change = Integer.parseInt(increase);
 			int channel = (channel + change);
-			sendMessage(sender, "Now" + Integer channel);
+			sendMessage(sender, "Now" + channel);
 			}
 			
 			//  regex code to change string to only numbers
