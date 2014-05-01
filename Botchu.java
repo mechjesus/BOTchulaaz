@@ -7,7 +7,7 @@ public class Botchu extends PircBot {
 	public Botchu() {
 		this.setName("Paul_Bot");
 	}
-	int channel = 50;
+	int sounda = 50;
 	// this is where we put in replies etc...
 	public void onMessage(String channel, String sender, String login, String hostname, String message) {
 
@@ -28,8 +28,8 @@ public class Botchu extends PircBot {
 			String increase = message.replaceAll("\\D+","");
 			int change = new Integer(increase);
 			change = Integer.parseInt(increase);
-			channel = (channel + change);
-			sendMessage(sender, "Now" + channel);
+			sounda = (sounda + change);
+			sendAction(channel, " raised it to" + sounda);
 			}
 			
 			//  regex code to change string to only numbers
