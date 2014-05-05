@@ -7,10 +7,11 @@ public class Botchu extends PircBot {
 	public Botchu() {
 		this.setName("Paul_Bot");
 	}
-	int sounda = 50;
+	
 	// this is where we put in replies etc...
 	public void onMessage(String channel, String sender, String login, String hostname, String message) {
-
+		
+		int sounda = 50;
 		if (message.equalsIgnoreCase("@time")) {
 			String time = new java.util.Date().toString();
 			sendMessage(channel, sender + ": The time is now " + time);
